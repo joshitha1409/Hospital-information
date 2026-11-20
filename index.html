@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Unity Hospital — Healthcare, reimagined.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/modern.css" />
-</head>
-<body>
-  <div data-site-nav></div>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div>
-          <span class="eyebrow reveal"><span class="dot"></span> 24/7 Emergency Care · Ahmedabad</span>
-          <h1 class="reveal" data-delay="1">Healthcare,<br/><span class="grad">reimagined</span> for you.</h1>
-          <p class="hero-sub reveal" data-delay="2">Unity Hospital brings together 45+ super‑specialities...</p>
-          <div class="hero-ctas reveal" data-delay="3">
-            <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
-            <a href="doctors.html" class="btn btn-ghost">Meet our doctors</a>
-          </div>
-        </div>
-        <!-- Hero visual with images/cards -->
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+import javax.swing.*;
+import java.awt.*;
+import java.sql.*;
+
+public class Entry extends JFrame {
+    public Entry() {
+        initComponents();
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new Entry());
+    }
+}
